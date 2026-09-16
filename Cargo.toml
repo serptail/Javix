@@ -1,0 +1,8 @@
+[package]
+name = "javix"
+version = "0.4.0"
+authors = ["serptail"]
+edition = "2025"
+description = "A Java .class bytecode decompiler written in Rust"
+
+[dependencies]
