@@ -137,10 +137,3 @@ Loops, `tableswitch`/`lookupswitch`, try/catch, `jsr`/`ret`, `invokedynamic`
 
 A method it cannot reconstruct becomes a comment plus a bytecode listing rather
 than a panic or, worse, confident nonsense.
-
-## Known rough edge
-
-A variable first assigned inside both arms of an `if` is declared inside each
-arm, which is valid Java but scopes it there. If a later statement uses it the
-output will not compile. The fix is a declaration-hoisting pass over the
-finished statement tree.
